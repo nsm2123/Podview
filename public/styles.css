@@ -1,0 +1,116 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF; /* Modern blue color */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px; /* Rounded corners */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2em;
+    border: 1px solid #ddd; /* Lighter border color */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 1em;
+}
+
+.form-row > label {
+    margin-bottom: 0.5em;
+    font-weight: bold; /* Emphasize labels */
+}
+
+.form-row > input,
+.form-row > select {
+    padding: 0.75em;
+    border-radius: 4px; /* Rounded input corners */
+    border: 1px solid #ccc; /* Light border color */
+    font-size: 1em;
+}
+
+.form-row > input:focus,
+.form-row > select:focus {
+    border-color: #007BFF; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* List styling */
+ul#podcastlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+ul#podcastlist li {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul#podcastlist li button {
+    background-color: #dc3545; /* Red color for delete button */
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+ul#podcastlist li button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

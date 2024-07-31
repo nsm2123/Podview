@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file on the same level -->
+</head>
+<body>
+    <header>
+        <h1>Podcast Tracker</h1>
+    </header>
+    <main>
+        <form id="podcastform">
+            <div class="form-row">
+                <label for="podcastName">Name</label>
+                <input
+                    type="text"
+                    name="podcastName"
+                    id="podcastName"
+                    placeholder="Enter podcast name"
+                    required
+                >
+            </div>
+            <div class="form-row">
+                <label for="podcastHost">Host</label>
+                <input
+                    type="text"
+                    name="podcastHost"
+                    id="podcastHost"
+                    placeholder="Enter podcast host"
+                    required
+                >
+            </div>
+            <div class="form-row">
+                <label for="podcastGenre">Genre</label>
+                <input
+                    type="text"
+                    name="podcastGenre"
+                    id="podcastGenre"
+                    placeholder="Enter podcast genre"
+                    required
+                >
+            </div>
+            <div class="form-row">
+                <label for="podcastDuration">Duration (minutes)</label>
+                <input
+                    type="number"
+                    name="podcastDuration"
+                    id="podcastDuration"
+                    placeholder="Enter duration in minutes"
+                    required
+                    min="0"
+                >
+            </div>
+            <div class="form-row">
+                <label for="podcastLink">Link</label>
+                <input
+                    type="url"
+                    name="podcastLink"
+                    id="podcastLink"
+                    placeholder="Enter podcast link"
+                    required
+                >
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Add Podcast">
+            </div>
+        </form>
+        <h2>Podcasts</h2>
+        <ul id="podcastlist"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
